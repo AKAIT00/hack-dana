@@ -108,5 +108,5 @@ client.on('message', msg => {
 }
 });
 ////
-client.login("")
+client.login("NzkwOTM3NDUzMDM2MzA2NDgy.X-H35w.xT-Iw7UmF2OfrsR3YpSHQk8KAzM")
           
