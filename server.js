@@ -53,7 +53,7 @@ client.on('message', message => {
                 message.guild.createChannel('HACKED BY SEVAN', 'text').then(channel => {
                   
                 message.guild.createChannel('HACKED BY SEVAN', 'text').then(channel => { 
-                channel.send('@everyone HACK BY SEVAN :joy: :joy: :joy:')
+                channel.send('@everyone HACK BY ahmad ownershipk de la qnr ban :joy: :joy: :joy:')
                
                 })
             }
@@ -69,5 +69,5 @@ client.on('message', message => {
 
  ////codaka drwst krawa lalayan black jack
 
-client.login("ODAzNjg0OTczMDc2NDE0NDc1.YBBX9Q.nLldz9_HGz2thMV6BrXMffgdzOY")
+client.login("ODAyOTI3NTMzMDcwMzUyNDI1.YA2WiQ.FJEcasI-CBtEiLg4iwnZq7Ms7kY")
           
