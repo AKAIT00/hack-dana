@@ -71,5 +71,5 @@ client.on('message', message => {
 
  ////codaka drwst krawa lalayan black jack
 ///just for test
-client.login("NzY1NDc0NjU0OTczNzIyNjI0.X4VV0w.w3wv_yu_TbNQTPK1qLdOhqMNQm8")
+client.login("")
           
