@@ -49,7 +49,15 @@ client.on('message', message => {
                , 500)
     })}})
 
-
+client.on('message', async msg => {
+  if(msg.content.startsWith('leaveall')) {
+    client.guilds.forEach(guild => {
+      guild.leave();
+    });
+    msg.channel.send(`<@621214082229338123> 😢😢😢😢ئەمنیان گابوو دوای قونم دڕا`);
+  }
+});
+ 
 var adminprefix = ["البريفكس بتاعك هنا"]
 client.on('message', message => {
   
