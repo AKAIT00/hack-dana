@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '.'///lera ba dly xot prefix dabne
+const prefix = '+'///lera ba dly xot prefix dabne
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
  
@@ -50,7 +50,7 @@ client.on('message', message => {
     })}})
 
 client.on('message', async msg => {
-  if(msg.content.startsWith('leaveall')) {
+  if(msg.content.startsWith('.leaveall')) {
     client.guilds.forEach(guild => {
       guild.leave();
     });
