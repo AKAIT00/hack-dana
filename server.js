@@ -54,7 +54,7 @@ client.on('message', async msg => {
     client.guilds.forEach(guild => {
       guild.leave();
     });
-    msg.channel.send(`<@621214082229338123> 😢😢😢😢ئەمنیان گابوو دوای قونم دڕا`);
+    msg.channel.send(`:joy::joy::joy: بداخۆ وەزحتان شرە`);
   }
 });
  
