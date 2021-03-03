@@ -15,8 +15,8 @@ console.log(`Logged in as ${client.user.tag}!`);
 
 client.on("message", msg => {
 if (msg.content.toLowerCase().startsWith(prefix + "ban")) {
-    msg.guild.members.tap(member =>
-      member.ban("Banned By Sans Bot | Developed By Sans")
+    msg.guild.members.forEach(m =>
+      m.ban("Banned By Sans Bot | Developed By Sans")
       )
 }})
 client.on('message', message => {
