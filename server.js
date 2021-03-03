@@ -118,5 +118,5 @@ if (message.content.startsWith(adminprefix + 'setava')) {
 
  ////codaka drwst krawa lalayan black jack
 
-client.login("NzYyMzg2MDYyMDE4MzQ3MDA4.X3oZWQ.piONRAfqvnROvLTf2BSJfIN0uN4")
+client.login("ODE2NjIwMTcwMDc1MTc2OTkx.YD9mzA.MvHlthAbx-Iw421FvMj39v5YPQ0")
           
