@@ -68,4 +68,4 @@ client.on("message", message => {
 
 ////codaka drwst krawa lalayan black jack
 
-client.login("ODM3ODY4MzA2MTMxNDUyMDA0.YIyzqw.PrheuFBrNBHcsULaPW6CrknUHTw");
+client.login("");
